@@ -32,6 +32,8 @@ dependencies {
     testImplementation 'org.projectlombok:lombok'
 
     implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+
+    implementation 'com.mysql:mysql-connector-j'
 }
 
 test {
