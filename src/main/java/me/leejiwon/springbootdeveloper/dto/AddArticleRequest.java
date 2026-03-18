@@ -14,10 +14,11 @@ public class AddArticleRequest {
 
     // JSON -> 객체 : 스프링부트가 알아서 해줌
     // toEntity() 함수는 DTO 객체를 Entity 객체로 변환해줌
-    public Article toEntity() {
+    public Article toEntity(String author) {
         return Article.builder()
                 .title(title)
                 .content(content)
+                .author(author)
                 .build();
     }
 }
