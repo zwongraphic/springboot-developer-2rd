@@ -17,12 +17,12 @@ spring:
       client:
         registration:
           google:
-            client-id: ${{ secrets.OAUTH_CLIENT_ID }}
-            client-secret: ${{ secrets.OAUTH_CLIENT_SECRET }}
+            client-id: test_id
+            client-secret: test_secret
             scope:
               - email
               - profile
 
 jwt:
   issuer: bababaenjooo@gmail.com
-  secret_key: study-springboot
+  secret_key: test_key
